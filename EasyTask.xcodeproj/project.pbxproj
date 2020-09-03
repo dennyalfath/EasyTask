@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2480DC322501100B003D2E78 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2480DC302501100B003D2E78 /* AuthState.swift */; };
+		2480DC332501100B003D2E78 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2480DC312501100B003D2E78 /* LoginManager.swift */; };
 		24E39A6324FF5E4A0078377E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A6224FF5E4A0078377E /* AppDelegate.swift */; };
 		24E39A6524FF5E4A0078377E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A6424FF5E4A0078377E /* SceneDelegate.swift */; };
 		24E39A6724FF5E4A0078377E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A6624FF5E4A0078377E /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		24E39A7224FF5E4A0078377E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E39A7024FF5E4A0078377E /* LaunchScreen.storyboard */; };
 		24E39A7D24FF5E4A0078377E /* EasyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A7C24FF5E4A0078377E /* EasyTaskTests.swift */; };
 		24E39A8824FF5E4A0078377E /* EasyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A8724FF5E4A0078377E /* EasyTaskUITests.swift */; };
+		24E39A9C24FF600E0078377E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E39A9B24FF600E0078377E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2480DC302501100B003D2E78 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		2480DC312501100B003D2E78 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		24E39A5F24FF5E4A0078377E /* EasyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E39A6224FF5E4A0078377E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E39A6424FF5E4A0078377E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		24E39A8324FF5E4A0078377E /* EasyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E39A8724FF5E4A0078377E /* EasyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTaskUITests.swift; sourceTree = "<group>"; };
 		24E39A8924FF5E4A0078377E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24E39A9824FF5E920078377E /* EasyTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyTask.entitlements; sourceTree = "<group>"; };
+		24E39A9B24FF600E0078377E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2480DC2F2501100B003D2E78 /* LoginHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2480DC302501100B003D2E78 /* AuthState.swift */,
+				2480DC312501100B003D2E78 /* LoginManager.swift */,
+			);
+			name = LoginHelper;
+			path = ../../../../Downloads/UIKitSignInWithAppleResources/LoginHelper;
+			sourceTree = "<group>";
+		};
 		24E39A5624FF5E4A0078377E = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +118,16 @@
 		24E39A6124FF5E4A0078377E /* EasyTask */ = {
 			isa = PBXGroup;
 			children = (
+				24E39A9824FF5E920078377E /* EasyTask.entitlements */,
 				24E39A6224FF5E4A0078377E /* AppDelegate.swift */,
 				24E39A6424FF5E4A0078377E /* SceneDelegate.swift */,
-				24E39A6624FF5E4A0078377E /* ViewController.swift */,
-				24E39A6824FF5E4A0078377E /* Main.storyboard */,
+				24E39A9524FF5E6C0078377E /* DataModel */,
+				24E39A9624FF5E790078377E /* View */,
+				24E39A9724FF5E800078377E /* Controller */,
+				2480DC2F2501100B003D2E78 /* LoginHelper */,
 				24E39A6E24FF5E4A0078377E /* Assets.xcassets */,
 				24E39A7024FF5E4A0078377E /* LaunchScreen.storyboard */,
 				24E39A7324FF5E4A0078377E /* Info.plist */,
-				24E39A6B24FF5E4A0078377E /* EasyTask.xcdatamodeld */,
 			);
 			path = EasyTask;
 			sourceTree = "<group>";
@@ -129,6 +148,31 @@
 				24E39A8924FF5E4A0078377E /* Info.plist */,
 			);
 			path = EasyTaskUITests;
+			sourceTree = "<group>";
+		};
+		24E39A9524FF5E6C0078377E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				24E39A6B24FF5E4A0078377E /* EasyTask.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		24E39A9624FF5E790078377E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24E39A6824FF5E4A0078377E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24E39A9724FF5E800078377E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24E39A6624FF5E4A0078377E /* ViewController.swift */,
+				24E39A9B24FF600E0078377E /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E39A6724FF5E4A0078377E /* ViewController.swift in Sources */,
+				2480DC322501100B003D2E78 /* AuthState.swift in Sources */,
 				24E39A6324FF5E4A0078377E /* AppDelegate.swift in Sources */,
+				2480DC332501100B003D2E78 /* LoginManager.swift in Sources */,
 				24E39A6D24FF5E4A0078377E /* EasyTask.xcdatamodeld in Sources */,
+				24E39A9C24FF600E0078377E /* LoginViewController.swift in Sources */,
 				24E39A6524FF5E4A0078377E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyTask/EasyTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88F3B7HV75;
 				INFOPLIST_FILE = EasyTask/Info.plist;
@@ -456,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyTask/EasyTask.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88F3B7HV75;
 				INFOPLIST_FILE = EasyTask/Info.plist;
