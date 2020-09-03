@@ -7,4 +7,3 @@ when they are logged in. It can be in any cases actually, especially if we are g
 this is need to be learnt as soon as i can. In order to use it later when i develop my own app or maybe our groups in next challenge.
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/54541419/92139378-dc9c5180-ee39-11ea-9fdd-aba8fecec8a6.png)
